@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.3">
+<title>One-to-One Matches | Transfer Reconciliation</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.0e7dc575.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.73a8ec5a.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.4ef1d259.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.0e7dc575.js";
+import {registerFile} from "./_observablehq/stdlib.73a8ec5a.js";
+
+registerFile("./data/matches_1to1.csv", {"name":"./data/matches_1to1.csv","mimeType":"text/csv","path":"./_file/data/matches_1to1.18d2f9b1.csv","lastModified":1757698490203,"size":66658});
+
+define({id: "3b3fce29", inputs: ["FileAttachment"], outputs: ["matches1to1"], body: (FileAttachment) => {
+const matches1to1 = FileAttachment("./data/matches_1to1.csv").csv({typed: true});
+return {matches1to1};
+}});
+
+define({id: "676a9b31", inputs: ["matches1to1"], outputs: ["uniqueMatches","totalAmount","avgAmount"], body: (matches1to1) => {
+const uniqueMatches = new Set(matches1to1.map(d => d.index_out)).size;
+const totalAmount = matches1to1.reduce((sum, d) => sum + Math.abs(d.amount_out), 0);
+const avgAmount = totalAmount / uniqueMatches;
+return {uniqueMatches,totalAmount,avgAmount};
+}});
+
+define({id: "be8134a6", mode: "inline", inputs: ["uniqueMatches","display"], body: async (uniqueMatches,display) => {
+display(await(
+uniqueMatches.toLocaleString()
+))
+}});
+
+define({id: "6a64b9d6", mode: "inline", inputs: ["totalAmount","display"], body: async (totalAmount,display) => {
+display(await(
+(totalAmount / 1000000).toFixed(1)
+))
+}});
+
+define({id: "dab9e283", mode: "inline", inputs: ["avgAmount","display"], body: async (avgAmount,display) => {
+display(await(
+(avgAmount / 1000000).toFixed(1)
+))
+}});
+
+define({id: "d16c7d24", inputs: ["view","Inputs"], outputs: ["search"], body: (view,Inputs) => {
+const search = view(Inputs.text({placeholder: "Search transactions..."}));
+return {search};
+}});
+
+define({id: "cc977d55", inputs: ["view","Inputs"], outputs: ["dateOutFilter","amountOutFilter","accountOutFilter","dateInFilter","amountInFilter","accountInFilter","matchIdFilter"], body: (view,Inputs) => {
+const dateOutFilter = view(Inputs.text({placeholder: "Filter Out Date..."}));
+const amountOutFilter = view(Inputs.text({placeholder: "Filter Out Amount..."}));
+const accountOutFilter = view(Inputs.text({placeholder: "Filter Out Account..."}));
+const dateInFilter = view(Inputs.text({placeholder: "Filter In Date..."}));
+const amountInFilter = view(Inputs.text({placeholder: "Filter In Amount..."}));
+const accountInFilter = view(Inputs.text({placeholder: "Filter In Account..."}));
+const matchIdFilter = view(Inputs.text({placeholder: "Filter Match ID..."}));
+return {dateOutFilter,amountOutFilter,accountOutFilter,dateInFilter,amountInFilter,accountInFilter,matchIdFilter};
+}});
+
+define({id: "24193290", mode: "inline", inputs: ["search","display"], body: async (search,display) => {
+display(await(
+search
+))
+}});
+
+define({id: "c15e458b", mode: "inline", inputs: ["tableData","display"], body: async (tableData,display) => {
+display(await(
+tableData.length.toLocaleString()
+))
+}});
+
+define({id: "4907045c", mode: "inline", inputs: ["matchIdFilter","display"], body: async (matchIdFilter,display) => {
+display(await(
+matchIdFilter
+))
+}});
+
+define({id: "932872d3", mode: "inline", inputs: ["dateOutFilter","display"], body: async (dateOutFilter,display) => {
+display(await(
+dateOutFilter
+))
+}});
+
+define({id: "a09c9188", mode: "inline", inputs: ["amountOutFilter","display"], body: async (amountOutFilter,display) => {
+display(await(
+amountOutFilter
+))
+}});
+
+define({id: "e0c1f5a6", mode: "inline", inputs: ["accountOutFilter","display"], body: async (accountOutFilter,display) => {
+display(await(
+accountOutFilter
+))
+}});
+
+define({id: "f7621a3e", mode: "inline", inputs: ["dateInFilter","display"], body: async (dateInFilter,display) => {
+display(await(
+dateInFilter
+))
+}});
+
+define({id: "413bab56", mode: "inline", inputs: ["amountInFilter","display"], body: async (amountInFilter,display) => {
+display(await(
+amountInFilter
+))
+}});
+
+define({id: "474b3112", mode: "inline", inputs: ["accountInFilter","display"], body: async (accountInFilter,display) => {
+display(await(
+accountInFilter
+))
+}});
+
+define({id: "c66fec82", inputs: ["matches1to1","search","dateOutFilter","amountOutFilter","accountOutFilter","dateInFilter","amountInFilter","accountInFilter","matchIdFilter"], outputs: ["tableData"], body: (matches1to1,search,dateOutFilter,amountOutFilter,accountOutFilter,dateInFilter,amountInFilter,accountInFilter,matchIdFilter) => {
+const tableData = matches1to1
+  .filter(d => {
+    if (!search) return true;
+    const term = search.toLowerCase();    return (
+      String(d.date_out).toLowerCase().includes(term) ||
+      String(d.date_in).toLowerCase().includes(term) ||
+      String(d.amount_out).toLowerCase().includes(term) ||
+      String(d.amount_in).toLowerCase().includes(term) ||
+      String(d.account_id_out).toLowerCase().includes(term) ||
+      String(d.account_id_in).toLowerCase().includes(term) ||
+      String(d.match_id).toLowerCase().includes(term)
+    );
+  })  .filter(d => {
+    return (
+      (!dateOutFilter || String(d.date_out).toLowerCase().includes(dateOutFilter.toLowerCase())) &&
+      (!amountOutFilter || String(d.amount_out).toLowerCase().includes(amountOutFilter.toLowerCase())) &&
+      (!accountOutFilter || String(d.account_id_out).toLowerCase().includes(accountOutFilter.toLowerCase())) &&
+      (!dateInFilter || String(d.date_in).toLowerCase().includes(dateInFilter.toLowerCase())) &&
+      (!amountInFilter || String(d.amount_in).toLowerCase().includes(amountInFilter.toLowerCase())) &&
+      (!accountInFilter || String(d.account_id_in).toLowerCase().includes(accountInFilter.toLowerCase())) &&
+      (!matchIdFilter || String(d.match_id).toLowerCase().includes(matchIdFilter.toLowerCase()))
+    );  })
+  .sort((a, b) => {
+    // First sort by match_id, then by date_out, then by date_in
+    if (a.match_id !== b.match_id) return a.match_id - b.match_id;
+    if (a.date_out !== b.date_out) return new Date(b.date_out) - new Date(a.date_out);
+    return new Date(b.date_in) - new Date(a.date_in);
+  })
+  .map((d, i) => ({ index: i + 1, ...d }));
+return {tableData};
+}});
+
+define({id: "df8fdb76", inputs: ["Inputs","tableData","display"], body: async (Inputs,tableData,display) => {
+display(await(
+Inputs.table(tableData, {  columns: ["index", "match_id", "date_out", "amount_out", "account_id_out", "date_in", "amount_in", "account_id_in"],
+  header: {
+    index: "#",
+    match_id: "Match ID",
+    date_out: "Out Date",
+    amount_out: "Out Amount", 
+    account_id_out: "Out Account",
+    date_in: "In Date",
+    amount_in: "In Amount",
+    account_id_in: "In Account"
+  },  format: {
+    index: d => d,
+    match_id: d => d,
+    amount_out: d => Number(d).toLocaleString("en-US", {style: "currency", currency: "USD"}),
+    amount_in: d => Number(d).toLocaleString("en-US", {style: "currency", currency: "USD"}),
+    account_id_out: d => String(d),
+    account_id_in: d => String(d),
+    date_out: d => {
+      const date = new Date(d);
+      const year = date.getFullYear().toString();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    },
+    date_in: d => {
+      const date = new Date(d);
+      const year = date.getFullYear().toString();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    }
+  },  align: {
+    index: "center",
+    match_id: "center",
+    date_out: "center",
+    amount_out: "right",
+    account_id_out: "right",
+    date_in: "center", 
+    amount_in: "right",
+    account_id_in: "right"
+  },  width: {
+    index: 50,
+    match_id: 80,
+    date_out: 100,
+    amount_out: 120,
+    account_id_out: 150,
+    date_in: 100,
+    amount_in: 120,
+    account_id_in: 150
+  },
+  rows: 25
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Transfer Reconciliation</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./matches-1to1">One-to-One Matches</a></li>
+    <li class="observablehq-link"><a href="./matches-1tomany">One-to-Many Matches</a></li>
+    <li class="observablehq-link"><a href="./matches-manyto1">Many-to-One Matches</a></li>
+    <li class="observablehq-link"><a href="./unmatched">Unmatched Transactions</a></li>
+    <li class="observablehq-link"><a href="./raw-data">Raw Data</a></li>
+    <li class="observablehq-link"><a href="./report">Report</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="one-to-one-matches" tabindex="-1"><a class="observablehq-header-anchor" href="#one-to-one-matches">One-to-One Matches</a></h1>
+<p>This page shows all transactions that have been matched on a one-to-one basis.</p>
+<div class="observablehq observablehq--block"><!--:3b3fce29:--></div>
+<div class="observablehq observablehq--block"><!--:676a9b31:--></div>
+<div class="grid grid-cols-3">
+  <div class="card">
+    <h2>Unique Outflows Matched</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:be8134a6:--></span>
+  </div>
+  <div class="card">
+    <h2>Total Amount</h2>
+    <span class="big">$<observablehq-loading></observablehq-loading><!--:6a64b9d6:-->M</span>
+  </div>  <div class="card">
+    <h2>Average Amount</h2>
+    <span class="big">$<observablehq-loading></observablehq-loading><!--:dab9e283:-->M</span>
+  </div>
+</div>
+<h2 id="matched-transactions" tabindex="-1"><a class="observablehq-header-anchor" href="#matched-transactions">Matched Transactions</a></h2>
+<div class="observablehq observablehq--block"><!--:d16c7d24:--></div>
+<div class="observablehq observablehq--block"><!--:cc977d55:--></div>
+<p><observablehq-loading></observablehq-loading><!--:24193290:--> <span style="margin-left: 1rem; font-weight: bold;"><observablehq-loading></observablehq-loading><!--:c15e458b:--> results</span></p>
+<div style="display: grid; grid-template-columns: 50px 80px 100px 120px 150px 100px 120px 150px; gap: 8px; margin: 10px 0; font-size: 12px;">
+  <div></div>
+  <div style="text-align: center;"><observablehq-loading></observablehq-loading><!--:4907045c:--></div>
+  <div style="text-align: center;"><observablehq-loading></observablehq-loading><!--:932872d3:--></div>
+  <div style="text-align: right;"><observablehq-loading></observablehq-loading><!--:a09c9188:--></div>
+  <div style="text-align: right;"><observablehq-loading></observablehq-loading><!--:e0c1f5a6:--></div>
+  <div style="text-align: center;"><observablehq-loading></observablehq-loading><!--:f7621a3e:--></div>
+  <div style="text-align: right;"><observablehq-loading></observablehq-loading><!--:413bab56:--></div>
+  <div style="text-align: right;"><observablehq-loading></observablehq-loading><!--:474b3112:--></div>
+</div>
+<div class="observablehq observablehq--block"><!--:c66fec82:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:df8fdb76:--></div>
+<style>
+h1 {
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--theme-foreground-focus);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: transparent;
+}
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./"><span>Transfer Reconciliation</span></a><a rel="next" href="./matches-1tomany"><span>One-to-Many Matches</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-11-11T13:13:17">Nov 11, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>

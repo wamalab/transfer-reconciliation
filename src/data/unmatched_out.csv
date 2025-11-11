@@ -1,0 +1,498 @@
+index,date,amount,description,account_id,transaction_type,check #,source_file,row_id
+12,2023-09-11,-2020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,12
+14,2023-09-11,-1020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,14
+15,2023-09-11,-1020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,15
+16,2023-09-11,-2020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,16
+17,2023-09-11,-2020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,17
+138,2023-09-11,-455000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,138
+141,2023-09-11,-1020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,141
+142,2023-09-11,-1020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,142
+145,2023-09-11,-505000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,145
+151,2023-09-11,-455000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,151
+152,2023-09-11,-505000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,152
+153,2023-09-11,-1000000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,153
+154,2023-09-11,-455000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,154
+158,2023-09-11,-455000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,158
+159,2023-09-11,-505000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,159
+164,2023-09-11,-2020000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,164
+265,2023-10-03,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,265
+406,2023-10-26,-350000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,406
+421,2023-10-30,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,421
+478,2023-12-27,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,478
+511,2023-12-04,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,511
+789,2023-11-09,-20000000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,789
+1087,2023-06-30,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,1087
+1241,2023-07-26,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,1241
+1317,2023-08-03,-15000000,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,1317
+1464,2023-08-24,-20722.78,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,1464
+1496,2023-08-29,-175431.65,WIRE TRANSFER DEBIT,BNY x4667,Wire,NA,BNY-Checking 4667_05.22.23-12.29.23.xlsx,1496
+1506,2024-09-03,-62952.32,Agent Assisted transfer to CHK 1423 Confirmation# 3037479277,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1506
+1507,2024-09-24,-804.17,Agent Assisted transfer to CHK 1423 Confirmation# 3918657167,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1507
+1508,2024-09-30,-3462.06,Agent Assisted transfer to CHK 1423 Confirmation# 3971490019,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1508
+1509,2024-10-23,-779.17,Agent Assisted transfer to CHK 1423 Confirmation# 2769097566,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1509
+1510,2024-11-01,-3462.06,Agent Assisted transfer to CHK 1423 Confirmation# 0446575298,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1510
+1512,2024-11-08,-25,Agent Assisted transfer to CHK 1423 Confirmation# 3907765745,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1512
+1513,2024-12-10,-25,Agent Assisted transfer to CHK 1423 Confirmation# 0184231108,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1513
+1514,2024-12-31,-25,Agent Assisted transfer to CHK 1423 Confirmation# 1365518863,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1514
+1516,2025-02-03,-2290.16,Agent Assisted transfer to CHK 1423 Confirmation# 1859126252,4831 0616 0681,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1516
+1521,2016-10-31,-20241,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1521
+1523,2016-12-31,-180000,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1523
+1526,2017-03-31,-35525,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1526
+1528,2018-07-31,-11715,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1528
+1530,2020-05-01,-30000,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1530
+1532,2021-06-30,-37200,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1532
+1534,2024-04-30,-1253791.2,NA,4830 1341 0916,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1534
+1536,2016-01-31,-253019,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1536
+1538,2016-02-29,-31124,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1538
+1540,2016-03-31,-74130,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1540
+1542,2016-04-30,-6289000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1542
+1544,2016-05-31,-131386,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1544
+1547,2016-07-31,-7111330,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1547
+1549,2016-08-31,-146511,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1549
+1551,2016-09-30,-18518,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1551
+1553,2016-10-31,-55505316,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1553
+1557,2017-01-31,-53227,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1557
+1559,2017-02-28,-70795,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1559
+1561,2017-03-31,-800000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1561
+1563,2017-04-30,-9279000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1563
+1565,2017-05-31,-73275,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1565
+1568,2017-07-31,-93543,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1568
+1570,2017-08-31,-259188,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1570
+1574,2017-11-30,-86677,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1574
+1576,2017-12-31,-78386,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1576
+1578,2018-01-31,-6000000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1578
+1582,2018-04-30,-9988304,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1582
+1584,2018-05-31,-9514693,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1584
+1586,2018-06-30,-1460000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1586
+1591,2019-04-30,-615000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1591
+1597,2020-03-31,-475000,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1597
+1608,2023-01-31,-793858.93,NA,4830 1341 0961,Withdrawals and other Debits,NA,BofA-Checking.xlsx,1608
+2187,2018-02-13,-14897.75,WIRE TYPE:BOOK OUT DATE:180213 TIME:1524 ET TRN:2018021300322410 RELATED REF:TS20180213032410 BNF:LACKAWANNA WAREHOUSE CORP ID:483021384555,4830 2138 4555,Withdrawals and other Debits,NA,BofA-Checking.xlsx,2187
+3632,2019-04-02,-156000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1322 ET TRN:2019040200351004 RELATED REF:TS20190402123921 BNF:JANE H GOLDMAN 2008 Y-1 TR ID:483018062602 PMT DET:JANE H GOLDMAN 2008 Y 1 TRUST AGREEMEN,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3632
+3633,2019-04-02,-39000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1326 ET TRN:2019040200352781 RELATED REF:TS20190402123922 BNF:JANE H GOLDMAN 2008 Y-3 TR ID:483018062615 PMT DET:JANE H GOLDMAN 2008 Y 3 TRUST AGREEMENT,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3633
+3634,2019-04-02,-156000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1327 ET TRN:2019040200353154 RELATED REF:TS20190402123923 BNF:ALLAN H GOLDMAN 2008 Y-1 T ID:483018062521 PMT DET:ALLAN H GOLDMAN 2008 Y 1 TRUST AGREEMEN,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3634
+3635,2019-04-02,-39000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1328 ET TRN:2019040200353559 RELATED REF:TS20190402123924 BNF:ALLAN H GOLDMAN 2008 Y-3 T ID:483018062534 PMT DET:ALLAN H GOLDMAN 2008 Y 3 TRUST AGREEMEN,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3635
+3636,2019-04-02,-156000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1329 ET TRN:2019040200353894 RELATED REF:TS20190402123926 BNF:DIANE GLDMN KMPR 2008 Y-1 ID:483018062767 PMT DET:DIANE GOLDMAN KEMPER 2008 Y 1 TRUSTAGRE,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3636
+3637,2019-04-02,-39000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1330 ET TRN:2019040200354238 RELATED REF:TS20190402123927 BNF:DIANE GLDMN KMPR 2008 Y-3 ID:483018062770 PMT DET:DIANE GOLDMAN KEMPER 2008 Y 3 TRUSTAGRE,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3637
+3638,2019-04-02,-156000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1331 ET TRN:2019040200354573 RELATED REF:TS20190402123928 BNF:AMY P GOLDMAN 2008 Y-1 TRU ID:483018062686 PMT DET:AMY P GOLDMAN 2008 Y 1 TRUST AGREEMENT,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3638
+3639,2019-04-02,-39000,WIRE TYPE:BOOK OUT DATE:190402 TIME:1332 ET TRN:2019040200354910 RELATED REF:TS20190402123929 BNF:AMY P GOLDMAN 2008 Y-3 TRU ID:483018062699 PMT DET:AMY P GOLDMAN 2008 Y 3 TRUST AGREEMENT,4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3639
+3640,2019-04-02,-260000,"WIRE TYPE:WIRE OUT DATE:190402 TIME:1003 ET TRN:2019040200270053 SERVICE REF:320106 BNF:LILLIAN GOLDMAN MARITAL TR ID:3375645149 BNF BK:JPMORGAN CHASE BANK, N. ID:0002 PMT DET:TS2 0190402095102",4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3640
+3641,2019-04-02,-260000,"WIRE TYPE:WIRE OUT DATE:190402 TIME:1003 ET TRN:2019040200270090 SERVICE REF:320423 BNF:ESTATE OF LILLIAN GOLDMAN ID:3375645057 BNF BK:JPMORGAN CHASE BANK, N. ID:0002 PMT DET:TS2 0190402095103",4830 2010 6255,Withdrawals and other Debits,NA,BofA-Checking.xlsx,3641
+4162,2025-04-04,-2163802.21,"WIRE TYPE:WIRE OUT DATE:250404 TIME:1328 ET TRN:2025040400423439 SERVICE REF:454314 BNF:JANE H GOLDMAN ID:741659434 BNF BK:JPMORGAN CH ASE BANK, N. ID:0002 PMT DET:TS20250404012418",4830 3172 8622,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4162
+4163,2025-04-04,-731302.74,"WIRE TYPE:WIRE OUT DATE:250404 TIME:1341 ET TRN:2025040400430052 SERVICE REF:458476 BNF:ESTATE OF ALLAN GOLDMAN ID:741834961 BNF BK:JP MORGAN CHASE BANK, N. ID:0002 PMT DET:TS2025040401 2057",4830 3172 8622,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4163
+4168,2016-04-01,-738000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4168
+4170,2016-06-01,-385000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4170
+4173,2016-09-01,-590000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4173
+4175,2016-10-01,-140000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4175
+4177,2016-12-01,-440000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4177
+4179,2017-04-01,-559000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4179
+4181,2017-06-01,-445000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4181
+4185,2017-12-01,-505000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4185
+4187,2018-04-01,-770000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4187
+4189,2018-06-01,-355000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4189
+4193,2018-12-01,-465000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4193
+4195,2019-04-01,-702000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4195
+4197,2019-06-01,-240000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4197
+4199,2019-09-01,-635000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4199
+4201,2019-12-01,-1090000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4201
+4203,2020-06-01,-237500,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4203
+4205,2020-07-01,-575000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4205
+4211,2021-04-01,-450000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4211
+4213,2021-06-01,-135000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4213
+4215,2022-01-01,-465000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4215
+4218,2022-04-01,-70000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4218
+4230,2023-05-01,-525000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4230
+4234,2024-01-01,-168000,NA,4830 1806 2592,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4234
+4253,2016-06-01,-1960000,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4253
+4266,2017-04-01,-2176000,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4266
+4301,2019-10-01,-1505,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4301
+4307,2020-06-01,-1007500,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4307
+4329,2022-04-01,-230000,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4329
+4333,2022-08-01,-13760.88,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4333
+4340,2023-01-01,-1000000,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4340
+4342,2023-04-01,-3567000,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4342
+4352,2024-04-01,-5357000,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4352
+4356,2024-07-01,-2408.09,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4356
+4369,2025-04-01,-4264750,NA,4830 1806 2602,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4369
+4386,2017-04-01,-428400,NA,4830 1806 2615,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4386
+4449,2022-12-01,-252500,NA,4830 1806 2615,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4449
+4453,2023-04-01,-777950,NA,4830 1806 2615,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4453
+4477,2025-04-01,-924000,NA,4830 1806 2615,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4477
+4481,2016-07-01,-323000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4481
+4484,2016-10-01,-1230000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4484
+4486,2016-12-01,-2485000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4486
+4488,2017-02-01,-1055000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4488
+4490,2017-04-01,-1759000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4490
+4492,2017-06-01,-2400000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4492
+4494,2017-09-01,-2555000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4494
+4497,2018-02-01,-1250000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4497
+4499,2018-04-01,-2835000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4499
+4501,2018-06-01,-1790000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4501
+4503,2018-07-01,-600000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4503
+4505,2018-09-01,-3400000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4505
+4506,2018-10-01,-47.65,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4506
+4508,2018-12-01,-3960000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4508
+4510,2019-04-01,-2342800,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4510
+4512,2019-06-01,-1350000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4512
+4514,2019-09-01,-4135000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4514
+4518,2020-07-01,-2850000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4518
+4520,2020-10-01,-1300000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4520
+4522,2020-12-01,-1078000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4522
+4524,2021-01-01,-2400000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4524
+4526,2021-04-01,-2000000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4526
+4528,2021-05-01,-850000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4528
+4530,2021-06-01,-510000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4530
+4532,2021-07-01,-166666.67,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4532
+4534,2021-09-01,-2095000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4534
+4536,2022-01-01,-2623820,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4536
+4538,2022-03-01,-3191000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4538
+4540,2022-06-01,-2225000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4540
+4542,2022-09-01,-3500000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4542
+4546,2023-01-01,-1125000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4546
+4548,2023-04-01,-4316000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4548
+4550,2023-05-01,-3500000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4550
+4552,2023-09-01,-2425000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4552
+4554,2023-12-01,-416666.67,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4554
+4556,2024-01-01,-1096271,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4556
+4558,2024-04-01,-5087000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4558
+4568,2024-12-01,-625000,NA,4830 1806 2628,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4568
+4578,2016-07-01,-58000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4578
+4581,2016-10-01,-277000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4581
+4583,2016-12-01,-491000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4583
+4585,2017-02-01,-268000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4585
+4587,2017-04-01,-350100,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4587
+4589,2017-06-01,-503000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4589
+4591,2017-09-01,-482000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4591
+4594,2018-02-01,-300000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4594
+4596,2018-04-01,-585000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4596
+4598,2018-06-01,-382000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4598
+4600,2018-07-01,-138000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4600
+4602,2018-09-01,-690000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4602
+4604,2018-12-01,-865000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4604
+4606,2019-04-01,-344000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4606
+4608,2019-06-01,-293000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4608
+4610,2019-09-01,-800000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4610
+4614,2020-07-01,-500000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4614
+4616,2020-10-01,-370000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4616
+4618,2020-12-01,-270000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4618
+4620,2021-01-01,-500000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4620
+4622,2021-04-01,-570000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4622
+4626,2021-06-01,-140000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4626
+4628,2021-09-01,-465000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4628
+4632,2022-03-01,-721000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4632
+4634,2022-06-01,-450000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4634
+4636,2022-09-01,-700000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4636
+4638,2022-12-01,-252500,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4638
+4640,2023-01-01,-300000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4640
+4642,2023-04-01,-777750,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4642
+4644,2023-05-01,-750000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4644
+4648,2024-01-01,-274068,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4648
+4660,2025-01-01,-505000,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4660
+4662,2025-03-01,-2373500,NA,4830 1806 2631,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4662
+4667,2016-04-01,-3243000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4667
+4669,2016-06-01,-1625000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4669
+4671,2016-07-01,-126000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4671
+4673,2016-09-01,-2505000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4673
+4675,2016-10-01,-680000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4675
+4677,2016-12-01,-1950000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4677
+4680,2017-02-01,-260000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4680
+4682,2017-04-01,-2220100,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4682
+4684,2017-06-01,-2000000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4684
+4687,2017-09-01,-1875000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4687
+4690,2017-12-01,-2076000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4690
+4693,2018-02-01,-340000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4693
+4696,2018-04-01,-3301000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4696
+4698,2018-06-01,-1380000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4698
+4700,2018-07-01,-270000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4700
+4702,2018-09-01,-2640000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4702
+4704,2018-10-01,-47,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4704
+4706,2018-12-01,-2840000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4706
+4710,2019-04-01,-3169230,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4710
+4712,2019-06-01,-940000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4712
+4715,2019-09-01,-3734000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4715
+4718,2019-12-01,-4644425,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4718
+4720,2020-04-01,-1158.88,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4720
+4722,2020-06-01,-900000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4722
+4724,2020-07-01,-2365000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4724
+4726,2020-08-01,-1107.94,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4726
+4727,2020-09-01,-1109,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4727
+4729,2020-10-01,-500000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4729
+4732,2020-12-01,-900000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4732
+4734,2021-01-01,-2000000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4734
+4736,2021-04-01,-1050000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4736
+4738,2021-05-01,-700000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4738
+4740,2021-06-01,-150000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4740
+4742,2021-09-01,-1640000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4742
+4744,2022-01-01,-1478150,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4744
+4746,2022-03-01,-2634000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4746
+4747,2022-04-01,-530000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4747
+4749,2022-06-01,-1900000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4749
+4752,2022-09-01,-3000000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4752
+4755,2022-12-01,-1010000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4755
+4759,2023-04-01,-2863575,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4759
+4761,2023-05-01,-2300000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4761
+4763,2023-09-01,-2020000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4763
+4765,2024-01-01,-769213,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4765
+4768,2024-04-01,-6357950,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4768
+4770,2024-06-01,-3030000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4770
+4772,2024-09-01,-2580215,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4772
+4774,2024-10-01,-1818000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4774
+4776,2024-11-01,-1006500,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4776
+4778,2025-01-01,-2020000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4778
+4780,2025-03-01,-9898000,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4780
+4782,2025-04-01,-3438681.25,NA,4830 1806 2660,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4782
+4784,2016-04-01,-738000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4784
+4786,2016-06-01,-385000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4786
+4789,2016-09-01,-590000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4789
+4791,2016-10-01,-143000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4791
+4793,2016-12-01,-437000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4793
+4795,2017-04-01,-558000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4795
+4797,2017-06-01,-445000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4797
+4799,2017-09-01,-413000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4799
+4801,2017-12-01,-505000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4801
+4803,2018-04-01,-771000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4803
+4805,2018-06-01,-330000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4805
+4807,2018-09-01,-655000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4807
+4809,2018-12-01,-555000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4809
+4811,2019-04-01,-760000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4811
+4813,2019-06-01,-191000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4813
+4815,2019-09-01,-832000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4815
+4817,2019-12-01,-1095000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4817
+4819,2020-06-01,-225000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4819
+4821,2020-07-01,-550000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4821
+4823,2020-10-01,-20000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4823
+4828,2021-04-01,-303000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4828
+4830,2021-05-01,-175000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4830
+4832,2021-06-01,-50000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4832
+4834,2021-09-01,-405000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4834
+4836,2022-01-01,-415000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4836
+4838,2022-03-01,-691000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4838
+4840,2022-06-01,-480000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4840
+4842,2022-09-01,-700000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4842
+4844,2022-12-01,-252500,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4844
+4846,2023-01-01,-100000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4846
+4850,2023-05-01,-500000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4850
+4854,2024-01-01,-168000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4854
+4866,2025-01-01,-505000,NA,4830 1806 2673,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4866
+4873,2016-04-01,-738000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4873
+4875,2016-06-01,-386000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4875
+4878,2016-09-01,-590000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4878
+4880,2016-10-01,-123000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4880
+4882,2016-12-01,-457000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4882
+4884,2017-04-01,-558000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4884
+4886,2017-06-01,-447000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4886
+4888,2017-09-01,-410000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4888
+4890,2017-12-01,-505000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4890
+4892,2018-04-01,-770000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4892
+4894,2018-06-01,-360000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4894
+4896,2018-09-01,-690000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4896
+4898,2018-12-01,-465000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4898
+4900,2019-04-01,-754000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4900
+4902,2019-06-01,-185000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4902
+4904,2019-09-01,-647000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4904
+4906,2019-12-01,-1090000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4906
+4908,2020-06-01,-237500,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4908
+4910,2020-07-01,-560000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4910
+4911,2020-10-01,-13000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4911
+4913,2020-12-01,-189000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4913
+4915,2021-01-01,-500000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4915
+4917,2021-04-01,-450000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4917
+4919,2021-05-01,-175000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4919
+4923,2021-09-01,-475000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4923
+4925,2022-01-01,-455000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4925
+4927,2022-03-01,-336500,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4927
+4928,2022-04-01,-60000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4928
+4933,2023-01-01,-1700000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4933
+4935,2023-04-01,-630000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4935
+4941,2024-02-01,-350000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4941
+4943,2024-04-01,-1580000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4943
+4945,2024-06-01,-305755.47,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4945
+4947,2024-09-01,-200000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4947
+4949,2024-10-01,-500000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4949
+4951,2024-11-01,-126000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4951
+4953,2025-01-01,-424000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4953
+4957,2025-04-01,-410000,NA,4830 1806 2505,Withdrawals and other Debits,NA,BofA-Checking.xlsx,4957
+4989,2020-06-30,-1007500,Other Withdrawals,4830 1806 2767,NA,NA,BofA-Checking.xlsx,4989
+5011,2022-04-29,-260000,Other Withdrawals,4830 1806 2767,NA,NA,BofA-Checking.xlsx,5011
+5015,2022-08-31,-13760.88,Other Withdrawals,4830 1806 2767,NA,NA,BofA-Checking.xlsx,5015
+5024,2023-04-28,-3567000,Other Withdrawals,4830 1806 2767,NA,NA,BofA-Checking.xlsx,5024
+5034,2024-04-30,-5357000,Other Withdrawals,4830 1806 2767,NA,NA,BofA-Checking.xlsx,5034
+5050,2025-04-30,-4264750,Other Withdrawals,4830 1806 2767,NA,NA,BofA-Checking.xlsx,5050
+5104,2022-04-29,-60000,Other Withdrawals,4830 1806 2770,NA,NA,BofA-Checking.xlsx,5104
+5116,2023-04-28,-777950,Other Withdrawals,4830 1806 2770,NA,NA,BofA-Checking.xlsx,5116
+5140,2025-04-30,-934000,Other Withdrawals,4830 1806 2770,NA,NA,BofA-Checking.xlsx,5140
+5143,2018-04-30,-2820000,Other Withdrawals,4830 1806 2783,NA,NA,BofA-Checking.xlsx,5143
+5150,2019-04-30,-2332000,Other Withdrawals,4830 1806 2783,NA,NA,BofA-Checking.xlsx,5150
+5152,2019-06-28,-1350000,Other Withdrawals,4830 1806 2783,NA,NA,BofA-Checking.xlsx,5152
+5186,2018-04-30,-585000,Other Withdrawals,4830 1806 2796,NA,NA,BofA-Checking.xlsx,5186
+5192,2019-04-30,-394000,Other Withdrawals,4830 1806 2796,NA,NA,BofA-Checking.xlsx,5192
+5194,2019-06-28,-238000,Other Withdrawals,4830 1806 2796,NA,NA,BofA-Checking.xlsx,5194
+5226,2018-04-30,-20000,Other Withdrawals,4830 2596 5925,NA,NA,BofA-Checking.xlsx,5226
+5230,2022-04-29,-1000,Other Withdrawals,4830 2596 5925,NA,NA,BofA-Checking.xlsx,5230
+5231,2024-04-30,-17000,Other Withdrawals,4830 2596 5925,NA,NA,BofA-Checking.xlsx,5231
+5233,2025-04-30,-4500,Other Withdrawals,4830 2596 5925,NA,NA,BofA-Checking.xlsx,5233
+5235,2018-04-30,-10000,Other Withdrawals,4830 2596 5941,NA,NA,BofA-Checking.xlsx,5235
+5239,2019-04-30,-14000,Other Withdrawals,4830 2596 5941,NA,NA,BofA-Checking.xlsx,5239
+5241,2022-04-29,-1000,Other Withdrawals,4830 2596 5941,NA,NA,BofA-Checking.xlsx,5241
+5243,2024-04-30,-6500,Other Withdrawals,4830 2596 5941,NA,NA,BofA-Checking.xlsx,5243
+5244,2025-04-30,-8500,Other Withdrawals,4830 2596 5941,NA,NA,BofA-Checking.xlsx,5244
+5248,2024-02-15,-250000,TRANSFER OF FUNDS FROM EXXXX4003 TO 7XXXX9756,E72374003,P-CASH,NA,JPM-Brokerage_Family Office Banking.xlsx,5248
+5250,2024-03-15,-146490.5,TRANSFERRED BY WIRE TO ISRAEL       DISCOUNT BANK OF NEW YORK FAO       TRAVEL YESTERDAY INC DBA FISCHER    TRAVEL ENTERPRISES,E72374003,P-CASH,NA,JPM-Brokerage_Family Office Banking.xlsx,5250
+5251,2024-03-27,-112890.4,TRANSFER OF FUNDS FROM EXXXX4003 TO 7XXXX9434 reimbursement,E72374003,P-CASH,NA,JPM-Brokerage_Family Office Banking.xlsx,5251
+5255,2023-03-17,-5554000,TRANSFER OF FUNDS FROM EXXXX8009 TO GXXXX8008,E86698009,P-CASH,NA,JPM-Brokerage_Family Office Banking.xlsx,5255
+5263,2023-09-14,-1000000,TRANSFER OF FUNDS FROM UXXXX4001 TO 7XXXX6995,Chase 4001,Misc. Disbursement,NA,JPM-Brokerage_Personal Banking.xlsx,5263
+5318,2024-11-25,-200.8,Online Transfer to CHK ...0719 transaction#: 22826954487,514975997,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5318
+5355,2022-02-28,-42500,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5355
+5359,2022-06-27,-42500,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5359
+5360,2022-09-07,-42500,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5360
+5362,2022-10-03,-432000,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9434,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5362
+5363,2022-11-28,-42500,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756 Solina Ann Lewis,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5363
+5367,2023-02-13,-75000,Transfer From 0XXXXXXXXXXX0702 to 0X  XXXXXXXXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5367
+5370,2023-05-15,-75000,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5370
+5373,2023-08-23,-75000,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5373
+5375,2023-11-08,-250000,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5375
+5380,2024-09-09,-42000,CREDIT REVERSAL,741690702,Debit/Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5380
+5383,2024-10-04,-250000,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5383
+5387,2025-01-27,-100000,TRANSFER OF FUNDS FROM 7XXXX0702 TO   7XXXX9756,741690702,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5387
+5391,2022-12-19,-5500000,TRANSFER OF FUNDS FROM 7XXXX4928 TO   EXXXX0006,741694928,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5391
+5393,2023-03-17,-88167.05,Transfer From 0XXXXXXXXXXX4928 to GX  XXXX8008,741694928,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5393
+5395,2024-05-02,-75010.36,Online Transfer to CHK ...5656 transaction#: 20656483111,741694928,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5395
+5396,2024-05-20,-10000,Online Transfer to CHK ...0976 transaction#: 20838115808,741694928,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5396
+5398,2025-03-18,-29317.89,Online Transfer to CHK ...5656 transaction#: 24096357256,741694928,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5398
+5399,2022-02-22,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5399
+5400,2022-03-21,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5400
+5404,2022-05-24,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5404
+5405,2022-06-15,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5405
+5406,2022-07-07,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5406
+5407,2022-07-26,-4000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5407
+5410,2022-08-29,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5410
+5413,2022-09-14,-3000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5413
+5415,2022-09-29,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5415
+5417,2022-10-20,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5417
+5419,2022-12-01,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5419
+5420,2022-12-12,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5420
+5421,2023-01-04,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5421
+5422,2023-01-25,-4000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5422
+5424,2023-02-14,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5424
+5425,2023-02-14,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5425
+5428,2023-04-03,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5428
+5430,2023-04-25,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5430
+5434,2023-05-22,-4000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5434
+5435,2023-05-22,-1000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5435
+5439,2023-06-12,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5439
+5441,2023-07-05,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5441
+5443,2023-07-19,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5443
+5445,2023-08-08,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5445
+5447,2023-09-11,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5447
+5451,2023-10-04,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5451
+5453,2023-10-24,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5453
+5461,2023-12-15,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5461
+5463,2023-12-26,-3000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5463
+5464,2024-01-02,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5464
+5466,2024-01-16,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5466
+5467,2024-02-01,-7500,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5467
+5469,2024-02-27,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5469
+5471,2024-03-14,-16632.06,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD16632,06/ACC/E903753301453224/BNF/GBP12750.00 TRN: 9198238074FX",741706995,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5471
+5472,2024-03-18,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5472
+5474,2024-04-09,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5474
+5475,2024-04-30,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5475
+5477,2024-05-20,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5477
+5479,2024-06-11,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5479
+5480,2024-07-01,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5480
+5482,2024-07-15,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5482
+5484,2024-08-07,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5484
+5485,2024-09-03,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5485
+5487,2024-09-17,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5487
+5489,2024-10-28,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5489
+5491,2024-11-26,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5491
+5493,2024-12-17,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5493
+5495,2025-01-13,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5495
+5496,2025-01-29,-10000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5496
+5499,2025-03-17,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5499
+5500,2025-03-24,-5000,NA,741706995,Withdrawal,NA,JPM-Checking_Family Office Banking.xlsx,5500
+5671,2022-04-12,-1182.18,TRANSFER OF FUNDS FROM 7XXXX7746 TO   7XXXX3527,741707746,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5671
+5672,2022-04-27,-2731.87,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD2731,87/ACC/E719919442755305/BNF/GBP2130.00 TRN: 3326009117FX",741707746,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5672
+5676,2022-06-07,-1654.35,TRANSFER OF FUNDS FROM 7XXXX7746 TO   7XXXX3527,741707746,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5676
+5679,2022-06-29,-10,TRANSFER OF FUNDS FROM 7XXXX7746 TO   7XXXX3527,741707746,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5679
+5680,2022-07-12,-1179.89,TRANSFER OF FUNDS FROM 7XXXX7746 TO   7XXXX3527,741707746,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5680
+5681,2022-08-09,-1181.71,TRANSFER OF FUNDS FROM 7XXXX7746 TO   7XXXX3527,741707746,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5681
+5683,2022-08-25,-11500,TRANSFER OF FUNDS FROM 7XXXX7746 TO   1XXX3798 JANE GOLDMAN INV 649,741707746,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5683
+5796,2024-05-13,-253892.13,TRANSFER OF FUNDS FROM 7XXXX3313 TO   7XXXX9434,741723313,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5796
+5797,2024-05-13,-84630.71,TRANSFER OF FUNDS FROM 7XXXX3313 TO   7XXXX0291,741723313,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5797
+5805,2022-10-19,-329963.63,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD329963,63/ACC/E486582551956655/BNF/EUR337500.00 TRN: 1754809292FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5805
+5808,2023-02-07,-362245.5,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD362245,50/ACC/E881295970758736/BNF/EUR337500.00 TRN: 8561328038FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5808
+5810,2023-09-14,-67961.2,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD67961,20/ACC/E688059861456026/BNF/EUR62104.50 TRN: 3286068257FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5810
+5811,2023-09-18,-140120.63,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD140120,63/ACC/E636036451858293/BNF/EUR130000.00 TRN: 4025377261FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5811
+5812,2023-10-19,-11647.3,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD11647,30/ACC/E759578551953801/BNF/GBP9394.54 TRN: 7524478292FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5812
+5813,2023-10-20,-82862.7,TRANSFER OF FUNDS FROM 7XXXX0288 TO   7XXXX9434,758850288,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5813
+5814,2023-10-20,-8659.72,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD8659,72/ACC/E845970712056225/BNF/EUR8038.50 TRN: 6045246293FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5814
+5816,2023-10-23,-3753.18,TRANSFER OF FUNDS FROM 7XXXX0288 TO   7XXXX9434,758850288,Pre-Authorized Payment,NA,JPM-Checking_Family Office Banking.xlsx,5816
+5822,2024-12-18,-972701.99,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD972701,99/ACC/E938729231879786/BNF/EUR926250.00 TRN: 9362689353FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5822
+5823,2025-03-04,-848184.48,"FOREIGN REMITTANCE DEBIT A/C: FX USD INCOMINGFEDCHIPSDDA NEWARK DE 19713- US ORG: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA OGB: FX USD INCOMINGFEDCHIPSDDA JPMORGAN CHASE BANK NA REF:/OCMT/USD848184,48/ACC/E746433400458297/BNF/EUR807600.00 TRN: 1339066063FX",758850288,Foreign Remittance Debit,NA,JPM-Checking_Family Office Banking.xlsx,5823
+5827,2023-06-01,-3390000,TRANSFER OF FUNDS FROM 7XXXX0507 TO   7XXXX3873 06/01,Chase 0507,ACCT_XFER,NA,JPM-Checking_Personal Banking.xlsx,5827
+5838,2023-08-29,-20000,WITHDRAWAL 08/29,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5838
+5839,2023-08-30,-27000,WITHDRAWAL 08/30,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5839
+5852,2023-11-14,-5000,WITHDRAWAL 11/14,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5852
+5868,2024-02-06,-1302205.84,TRANSFER OF FUNDS FROM 7XXXX0507 TO   7XXXX3680 02/06,Chase 0507,ACCT_XFER,NA,JPM-Checking_Personal Banking.xlsx,5868
+5885,2024-04-24,-15000,WITHDRAWAL 04/24,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5885
+5887,2024-05-06,-5000,WITHDRAWAL 05/06,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5887
+5898,2024-06-25,-250000,CHIPS DEBIT VIA: CITIBANK N.A./0008 A/C: DIANE G KEMPER CHECKING ACCOUNT SSN: 00398081 TRN: 1042100177ES 06/25,Chase 0507,WIRE_OUTGOING,NA,JPM-Checking_Personal Banking.xlsx,5898
+5905,2024-07-22,-10000,WITHDRAWAL 07/22,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5905
+5906,2024-07-24,-100000,CHIPS DEBIT VIA: CITIBANK N.A./0008 A/C: DIANE G KEMPER CHECKING ACCOUNT SSN: 00498363 TRN: 1326200206ES 07/24,Chase 0507,WIRE_OUTGOING,NA,JPM-Checking_Personal Banking.xlsx,5906
+5910,2024-07-25,-1000,TRANSFER OF FUNDS FROM 7XXXX0507 TO   7XXXX7667 07/25,Chase 0507,ACCT_XFER,NA,JPM-Checking_Personal Banking.xlsx,5910
+5919,2024-08-23,-5000,WITHDRAWAL 08/23,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5919
+5931,2024-09-12,-15000,WITHDRAWAL 09/12,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5931
+5938,2024-10-02,-5000,WITHDRAWAL 10/02,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5938
+5947,2024-10-15,-15000,WITHDRAWAL 10/15,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5947
+5957,2024-11-15,-15000,WITHDRAWAL 11/15,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5957
+5961,2024-11-19,-500000,CHIPS DEBIT VIA: CITIBANK N.A./0008 A/C: DIANE G KEMPER CHECKING ACCOUNT SSN: 00423648 TRN: 1136900324ES 11/19,Chase 0507,WIRE_OUTGOING,NA,JPM-Checking_Personal Banking.xlsx,5961
+5965,2024-12-03,-10000,WITHDRAWAL 12/03,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,5965
+5975,2025-01-06,-1654502.2,TRANSFER OF FUNDS FROM 7XXXX0507 TO   7XXXX3680 01/06,Chase 0507,ACCT_XFER,NA,JPM-Checking_Personal Banking.xlsx,5975
+6005,2025-04-08,-5000,WITHDRAWAL 04/08,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6005
+6010,2025-04-15,-50500,WITHDRAWAL 04/15,Chase 0507,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6010
+6021,2025-04-22,-2259729.47,TRANSFER OF FUNDS FROM 7XXXX0507 TO   5XXXX4230 04/22,Chase 0507,ACCT_XFER,NA,JPM-Checking_Personal Banking.xlsx,6021
+6036,2023-05-22,-1000,WITHDRAWAL 05/22,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6036
+6037,2023-05-22,-4000,WITHDRAWAL 05/22,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6037
+6041,2023-06-12,-5000,WITHDRAWAL 06/12,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6041
+6043,2023-07-05,-10000,WITHDRAWAL 07/05,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6043
+6045,2023-07-19,-5000,WITHDRAWAL 07/19,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6045
+6047,2023-08-08,-5000,WITHDRAWAL 08/08,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6047
+6049,2023-09-11,-5000,WITHDRAWAL 09/11,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6049
+6053,2023-10-04,-5000,WITHDRAWAL 10/04,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6053
+6055,2023-10-24,-5000,WITHDRAWAL 10/24,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6055
+6057,2023-11-06,-5000,WITHDRAWAL 11/06,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6057
+6061,2023-12-04,-5000,WITHDRAWAL 12/04,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6061
+6063,2023-12-15,-5000,WITHDRAWAL 12/15,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6063
+6065,2023-12-26,-3000,WITHDRAWAL 12/26,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6065
+6066,2024-01-02,-5000,WITHDRAWAL 01/02,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6066
+6068,2024-01-16,-5000,WITHDRAWAL 01/16,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6068
+6069,2024-02-01,-7500,WITHDRAWAL 02/01,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6069
+6071,2024-02-27,-5000,WITHDRAWAL 02/27,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6071
+6073,2024-03-18,-5000,WITHDRAWAL 03/18,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6073
+6075,2024-04-09,-5000,WITHDRAWAL 04/09,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6075
+6076,2024-04-30,-5000,WITHDRAWAL 04/30,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6076
+6078,2024-05-20,-5000,WITHDRAWAL 05/20,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6078
+6080,2024-06-11,-5000,WITHDRAWAL 06/11,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6080
+6081,2024-07-01,-5000,WITHDRAWAL 07/01,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6081
+6083,2024-07-15,-5000,WITHDRAWAL 07/15,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6083
+6085,2024-08-07,-5000,WITHDRAWAL 08/07,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6085
+6086,2024-09-03,-5000,WITHDRAWAL 09/03,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6086
+6088,2024-09-17,-5000,WITHDRAWAL 09/17,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6088
+6090,2024-10-28,-5000,WITHDRAWAL 10/28,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6090
+6092,2024-11-26,-5000,WITHDRAWAL 11/26,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6092
+6094,2024-12-17,-5000,WITHDRAWAL 12/17,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6094
+6096,2025-01-13,-5000,WITHDRAWAL 01/13,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6096
+6097,2025-01-29,-10000,WITHDRAWAL 01/29,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6097
+6100,2025-03-17,-5000,WITHDRAWAL 03/17,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6100
+6101,2025-03-24,-5000,WITHDRAWAL 03/24,Chase 6995,MISC_DEBIT,NA,JPM-Checking_Personal Banking.xlsx,6101
+6105,2024-05-31,-5000,WITHDRAWAL TRAN DATE:20240531 POSTING DATE:20240531,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6105
+6106,2024-05-15,-5000,WITHDRAWAL TRAN DATE:20240515 POSTING DATE:20240515,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6106
+6108,2024-04-18,-5000,WITHDRAWAL TRAN DATE:20240418 POSTING DATE:20240418,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6108
+6109,2024-03-26,-10000,WITHDRAWAL TRAN DATE:20240326 POSTING DATE:20240326,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6109
+6113,2025-02-14,-10000,WITHDRAWAL TRAN DATE:20250214 POSTING DATE:20250214,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6113
+6115,2024-12-17,-10000,WITHDRAWAL TRAN DATE:20241217 POSTING DATE:20241217,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6115
+6117,2024-12-11,-20000,WITHDRAWAL TRAN DATE:20241211 POSTING DATE:20241211,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6117
+6118,2024-11-26,-10000,WITHDRAWAL TRAN DATE:20241126 POSTING DATE:20241126,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6118
+6119,2024-11-06,-5000,WITHDRAWAL TRAN DATE:20241106 POSTING DATE:20241106,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6119
+6120,2024-10-23,-5000,WITHDRAWAL TRAN DATE:20241023 POSTING DATE:20241023,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6120
+6122,2024-06-11,-15000,WITHDRAWAL TRAN DATE:20240611 POSTING DATE:20240611,Chase 0747,Misc Debit,NA,JPM-Checking_Personal_new_06.09.25 .xlsx,6122

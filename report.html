@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.3">
+<title>Bank Transfer Reconciliation | Transfer Reconciliation</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="modulepreload" href="./_observablehq/client.0e7dc575.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.73a8ec5a.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import "./_observablehq/client.0e7dc575.js";
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Transfer Reconciliation</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+    <li class="observablehq-link"><a href="./matches-1to1">One-to-One Matches</a></li>
+    <li class="observablehq-link"><a href="./matches-1tomany">One-to-Many Matches</a></li>
+    <li class="observablehq-link"><a href="./matches-manyto1">Many-to-One Matches</a></li>
+    <li class="observablehq-link"><a href="./unmatched">Unmatched Transactions</a></li>
+    <li class="observablehq-link"><a href="./raw-data">Raw Data</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./report">Report</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#background">Background</a></li>
+<li class="observablehq-secondary-link"><a href="#software-considered">Software Considered</a></li>
+<li class="observablehq-secondary-link"><a href="#matching-algorithm">Matching Algorithm</a></li>
+<li class="observablehq-secondary-link"><a href="#conclusion">Conclusion</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="bank-transfer-reconciliation" tabindex="-1"><a class="observablehq-header-anchor" href="#bank-transfer-reconciliation">Bank Transfer Reconciliation</a></h1>
+<p>This report summarizes my procedures and findings.</p>
+<h2 id="background" tabindex="-1"><a class="observablehq-header-anchor" href="#background">Background</a></h2>
+<p>I analyzed bank transactions to identify and reconcile transfers between several bank accounts. The goal was to match outgoing transactions from one account(s) with incoming transactions to another account(s).</p>
+<p>There were 6,721 total transactions, comprising 810 outgoing and 5,911 incoming transactions, spanning from January 1, 2022, to December 31, 2023.</p>
+<p>The sole focus was to match all 810 outgoing tranasactions to incoming transactions.</p>
+<h2 id="software-considered" tabindex="-1"><a class="observablehq-header-anchor" href="#software-considered">Software Considered</a></h2>
+<p>Software options considered for reconciling bank transactions were Microsoft Excel, Microsoft PowerBI, and the R programming language. R was ultimately chosen due to its powerful data manipulation and analysis capabilities, as well as its ability to handle large datasets efficiently.</p>
+<h3 id="microsoft-excel-for-bank-transfer-reconciliation" tabindex="-1"><a class="observablehq-header-anchor" href="#microsoft-excel-for-bank-transfer-reconciliation">❌ Microsoft Excel for Bank Transfer Reconciliation</a></h3>
+<p>While Excel is widely used for financial analysis, it proved inadequate for the scale and complexity of this reconciliation project involving 6,721 transactions across multiple accounts.</p>
+<ul>
+<li><strong>Manual &amp; Error-Prone</strong> → High risk of mistakes from copy-paste operations, manual filtering, and formula dragging across thousands of transactions.</li>
+<li><strong>Limited Scalable Matching</strong> → Power Query offers basic fuzzy matching but struggles with efficiency and automation for large datasets (6,000+ transactions).</li>
+<li><strong>Lack of Traceability</strong> → Changes to formulas, filters, and data are difficult to track systematically; no version control for analysis steps.</li>
+<li><strong>Poor Reproducibility</strong> → Hard to replicate analysis without clear, documented steps; manual processes cannot be easily repeated.</li>
+<li><strong>Memory &amp; Performance Limitations</strong> → Excel becomes sluggish with large datasets; pivot tables and complex formulas can cause crashes.</li>
+<li><strong>Inadequate Multi-Criteria Matching</strong> → Difficult to implement sophisticated matching logic based on amount, date tolerance, and account relationships.</li>
+<li><strong>No Advanced Date Handling</strong> → Limited functionality for handling date ranges, tolerances, and complex temporal matching criteria.</li>
+<li><strong>Cumbersome Many-to-Many Logic</strong> → Excel struggles with complex scenarios where one outgoing transaction matches multiple incoming transactions.</li>
+<li><strong>Limited Documentation</strong> → No built-in way to document matching rules, assumptions, and business logic for audit purposes.</li>
+<li><strong>Security &amp; Compliance Concerns</strong> → Difficult to secure sensitive financial data; limited access controls and audit trails.</li>
+</ul>
+<h3 id="microsoft-power-bi-for-bank-transfer-reconciliation" tabindex="-1"><a class="observablehq-header-anchor" href="#microsoft-power-bi-for-bank-transfer-reconciliation">❌ Microsoft PowerBI for Bank Transfer Reconciliation</a></h3>
+<p>PowerBI, despite its strengths in data visualization and business intelligence, lacks the sophisticated data processing capabilities required for complex transaction matching and reconciliation workflows.</p>
+<ul>
+<li><strong>Limited Data Transformation Logic</strong> → PowerBI's M language and DAX are not designed for complex matching algorithms required for reconciliation.</li>
+<li><strong>No Advanced Fuzzy Matching</strong> → Lacks sophisticated pattern matching capabilities needed to identify transfers across different account formats.</li>
+<li><strong>Visualization-Focused, Not Process-Focused</strong> → Designed for dashboards and reporting, not for detailed data processing and matching workflows.</li>
+<li><strong>Difficulty with Custom Business Rules</strong> → Hard to implement complex conditional logic for handling various transfer scenarios and edge cases.</li>
+<li><strong>Limited Data Export Options</strong> → Results are primarily for visualization; extracting processed/matched data for further analysis is cumbersome.</li>
+<li><strong>Performance Issues with Large Datasets</strong> → Can struggle with processing large transaction datasets efficiently, especially with complex transformations.</li>
+<li><strong>Inadequate Audit Trail</strong> → Limited ability to track and document the matching process for compliance and review purposes.</li>
+</ul>
+<h3 id="r-programming-language" tabindex="-1"><a class="observablehq-header-anchor" href="#r-programming-language">✅ R Programming Language</a></h3>
+<p>R was ultimately chosen due to its powerful data manipulation and analysis capabilities, as well as its ability to handle large datasets efficiently</p>
+<ul>
+<li><strong>Advanced Data Manipulation</strong> → The <code>dplyr</code> and <code>data.table</code> packages provide sophisticated filtering, grouping, and joining operations essential for matching transactions.</li>
+<li><strong>Flexible Matching Algorithms</strong> → Can implement custom fuzzy matching logic, date tolerance windows, and complex multi-criteria matching rules.</li>
+<li><strong>Robust Date/Time Handling</strong> → The <code>lubridate</code> package excels at parsing various date formats and implementing date range matching with tolerances.</li>
+<li><strong>Scalable Performance</strong> → Efficiently processes large datasets (6,000+ transactions) with vectorized operations and optimized data structures.</li>
+<li><strong>Comprehensive Documentation</strong> → Every step of the analysis can be documented in R scripts, ensuring full reproducibility and audit trails.</li>
+<li><strong>Statistical Analysis Capabilities</strong> → Built-in functions for detecting patterns, outliers, and generating summary statistics for reconciliation quality assessment.</li>
+<li><strong>Automated Workflow</strong> → Scripts can be run repeatedly with consistent results, eliminating manual errors and reducing processing time.</li>
+<li><strong>Flexible Output Options</strong> → Can export results to multiple formats (CSV, Excel, databases) and generate automated reports.</li>
+<li><strong>Version Control Integration</strong> → Works seamlessly with Git for tracking changes and maintaining analysis history.</li>
+<li><strong>Custom Business Logic</strong> → Easy to implement complex conditional rules for various transfer scenarios and edge cases.</li>
+</ul>
+<h2 id="matching-algorithm" tabindex="-1"><a class="observablehq-header-anchor" href="#matching-algorithm">Matching Algorithm</a></h2>
+<p>I implemented the following matching procedures using <strong>R</strong>:</p>
+<h3 id="parameters" tabindex="-1"><a class="observablehq-header-anchor" href="#parameters"><strong>Parameters</strong></a></h3>
+<p>The bank transfer reconciliation algorithm matches <strong>withdrawals</strong> and <strong>deposits</strong> across multiple accounts using a <strong>5-day forward-looking window</strong> and <strong>exact amount matching</strong> (<code>tolerance = 0.0</code>), considering up to <strong>4 transactions per group</strong> when evaluating 1-to-many and many-to-1 matches.</p>
+<h3 id="algorithm" tabindex="-1"><a class="observablehq-header-anchor" href="#algorithm"><strong>Algorithm</strong></a></h3>
+<ol>
+<li>
+<p><strong>Load &amp; Prepare Data</strong></p>
+<ul>
+<li>Import the transactions CSV.</li>
+<li>Assign unique row_id (index) to each transaction.</li>
+</ul>
+</li>
+<li>
+<p><strong>Split Transactions</strong></p>
+<ul>
+<li>Negative amounts → <strong>Outflows</strong></li>
+<li>Positive amounts → <strong>Inflows</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Three Matching Strategies</strong></p>
+<ul>
+<li><strong>1-to-1 Match</strong> → Single withdrawal matches a single deposit.</li>
+<li><strong>1-to-Many Match</strong> → One withdrawal matches multiple deposits.</li>
+<li><strong>Many-to-1 Match</strong> → Multiple withdrawals match a single deposit.</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply Matching Rules</strong></p>
+<ul>
+<li>Matches must occur <strong>within 5 days</strong>.</li>
+<li>Maximum grouping is <strong>4 transcations</strong> for <strong>1-to-Many Match</strong> and <strong>Many-to-1 Match</strong>.</li>
+<li>Account IDs <strong>must differ</strong>.</li>
+<li>Amounts must match <strong>exactly</strong> (<code>tolerance = 0.0</code>).</li>
+<li><strong>Remove matched transactions from pool</strong> to prevent double-matching</li>
+</ul>
+</li>
+<li>
+<p><strong>Export Results</strong></p>
+<ul>
+<li>Matched transactions → CSV files.</li>
+<li>Unmatched outflows → CSV for review.</li>
+<li>Summary log → <code>reconciliation_log.txt</code>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="algorithm-performance" tabindex="-1"><a class="observablehq-header-anchor" href="#algorithm-performance">⏱️Algorithm Performance</a></h3>
+<p><strong>R</strong> delievered a full reconciliation in <strong>just 62.5 seconds</strong>.</p>
+<p><strong>=== RECONCILIATION SUMMARY ===</strong></p>
+<ul>
+<li>Total Rows in Input File: 6,721</li>
+<li>Total Outflow Transactions: 810</li>
+</ul>
+<p><strong>Unique Outflows Matched</strong></p>
+<ul>
+<li>1-to-1: 298</li>
+<li>1-to-Many: 7</li>
+<li>Many-to-1: 8</li>
+</ul>
+<p>Unmatched Outflows: 497</p>
+<p>Total Runtime: 62.5 seconds</p>
+<p><strong>===============================</strong></p>
+<h2 id="conclusion" tabindex="-1"><a class="observablehq-header-anchor" href="#conclusion">Conclusion</a></h2>
+<h3 id="key-findings" tabindex="-1"><a class="observablehq-header-anchor" href="#key-findings">Key Findings</a></h3>
+<p>The bank transfer reconciliation analysis successfully matched <strong>313 unique outgoing transactions</strong> (38.6% of all outflows) across three distinct matching patterns:</p>
+<ul>
+<li><strong>298 one-to-one matches</strong> representing straightforward transfers between accounts</li>
+<li><strong>7 one-to-many matches</strong> where single withdrawals were split across multiple deposits</li>
+<li><strong>8 many-to-one matches</strong> where multiple withdrawals consolidated into single deposits</li>
+</ul>
+<h3 id="outstanding-reconciliation-items" tabindex="-1"><a class="observablehq-header-anchor" href="#outstanding-reconciliation-items">Outstanding Reconciliation Items</a></h3>
+<p><strong>497 outgoing transactions remain unmatched</strong> (61.4% of total outflows), indicating potential gaps in the available transaction data. These unmatched items may represent:</p>
+<ul>
+<li>Transfers to external banks not included in the dataset</li>
+<li>Transactions occurring outside the 5-day matching window</li>
+<li>Non-transfer withdrawals (fees, payments to third parties, etc.)</li>
+<li>Missing incoming transaction records from incomplete bank statements</li>
+</ul>
+<h3 id="recommendations" tabindex="-1"><a class="observablehq-header-anchor" href="#recommendations">Recommendations</a></h3>
+<ol>
+<li><strong>Expand Data Collection</strong> → Obtain additional bank statement periods and accounts to capture missing incoming transactions that may reconcile the 497 unmatched outflows.</li>
+<li><strong>Automated Reprocessing</strong> → The <strong>R-based analysis framework</strong> enables immediate reprocessing when additional transaction data becomes available, ensuring no manual rework is required.</li>
+</ol>
+<h3 id="technical-advantages" tabindex="-1"><a class="observablehq-header-anchor" href="#technical-advantages">Technical Advantages</a></h3>
+<p>This <strong>R programming language</strong> implementation provides significant advantages over traditional spreadsheet-based reconciliation:</p>
+<ul>
+<li><strong>62.5-second processing time</strong> for 6,721 transactions</li>
+<li><strong>100% reproducible</strong> analysis with full audit trail</li>
+<li><strong>Automated workflow</strong> eliminating manual errors</li>
+<li><strong>Scalable solution</strong> easily handling larger datasets</li>
+<li><strong>Version-controlled methodology</strong> ensuring consistent results</li>
+</ul>
+<p>The reconciliation framework is production-ready and can be immediately deployed when additional bank transaction data becomes available.</p>
+<style>
+h1 {
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+h2 {
+  color: var(--theme-foreground-focus);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--theme-foreground-focus);
+  padding-bottom: 0.5rem;
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--theme-foreground-focus);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: transparent;
+}
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./raw-data"><span>Raw Data</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-11-11T12:14:57">Nov 11, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>

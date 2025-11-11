@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.3">
+<title>Transfer Reconciliation</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="modulepreload" href="./_observablehq/client.0e7dc575.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.73a8ec5a.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.0e7dc575.js";
+import {registerFile} from "./_observablehq/stdlib.73a8ec5a.js";
+
+registerFile("./data/bank_transactions.csv", {"name":"./data/bank_transactions.csv","mimeType":"text/csv","path":"./_file/data/bank_transactions.fe7fe5ce.csv","lastModified":1757450532467,"size":936463});
+registerFile("./data/matches_1to1.csv", {"name":"./data/matches_1to1.csv","mimeType":"text/csv","path":"./_file/data/matches_1to1.18d2f9b1.csv","lastModified":1757698490203,"size":66658});
+registerFile("./data/matches_1to_many.csv", {"name":"./data/matches_1to_many.csv","mimeType":"text/csv","path":"./_file/data/matches_1to_many.a822129d.csv","lastModified":1757698490215,"size":4265});
+registerFile("./data/matches_many_to_1.csv", {"name":"./data/matches_many_to_1.csv","mimeType":"text/csv","path":"./_file/data/matches_many_to_1.cda6be82.csv","lastModified":1757698490254,"size":1219});
+registerFile("./data/unmatched_out.csv", {"name":"./data/unmatched_out.csv","mimeType":"text/csv","path":"./_file/data/unmatched_out.73692224.csv","lastModified":1757698490398,"size":57580});
+
+define({id: "c20f781a", inputs: ["FileAttachment"], outputs: ["transactions","matches1to1","matches1toMany","matchesMany1","unmatched"], body: (FileAttachment) => {
+const transactions = FileAttachment("./data/bank_transactions.csv").csv({typed: true});
+const matches1to1 = FileAttachment("./data/matches_1to1.csv").csv({typed: true});
+const matches1toMany = FileAttachment("./data/matches_1to_many.csv").csv({typed: true});
+const matchesMany1 = FileAttachment("./data/matches_many_to_1.csv").csv({typed: true});
+const unmatched = FileAttachment("./data/unmatched_out.csv").csv({typed: true});
+return {transactions,matches1to1,matches1toMany,matchesMany1,unmatched};
+}});
+
+define({id: "6c0e9a6c", inputs: ["transactions","matches1to1","matches1toMany","matchesMany1","unmatched"], outputs: ["totalTransactions","totalOutgoing","unique1to1Matches","unique1toManyMatches","uniqueManyto1Matches","totalUnmatched","totalUniqueMatched"], body: (transactions,matches1to1,matches1toMany,matchesMany1,unmatched) => {
+const totalTransactions = transactions.length;
+const totalOutgoing = transactions.filter(d => d.amount < 0).length;
+// Count unique outflows matched - use correct column names for each dataset
+const unique1to1Matches = new Set(matches1to1.map(d => d.index_out)).size;
+const unique1toManyMatches = new Set(matches1toMany.map(d => d.row_id_out)).size;
+const uniqueManyto1Matches = new Set(matchesMany1.map(d => d.row_id_out)).size;
+const totalUnmatched = unmatched.length;
+const totalUniqueMatched = unique1to1Matches + unique1toManyMatches + uniqueManyto1Matches;
+return {totalTransactions,totalOutgoing,unique1to1Matches,unique1toManyMatches,uniqueManyto1Matches,totalUnmatched,totalUniqueMatched};
+}});
+
+define({id: "ac9b6769", mode: "inline", inputs: ["totalTransactions","display"], body: async (totalTransactions,display) => {
+display(await(
+totalTransactions.toLocaleString()
+))
+}});
+
+define({id: "d3950071", mode: "inline", inputs: ["totalOutgoing","display"], body: async (totalOutgoing,display) => {
+display(await(
+totalOutgoing.toLocaleString()
+))
+}});
+
+define({id: "60cd8680", mode: "inline", inputs: ["totalUniqueMatched","display"], body: async (totalUniqueMatched,display) => {
+display(await(
+totalUniqueMatched.toLocaleString()
+))
+}});
+
+define({id: "f44167e6", mode: "inline", inputs: ["totalUniqueMatched","totalOutgoing","display"], body: async (totalUniqueMatched,totalOutgoing,display) => {
+display(await(
+((totalUniqueMatched / totalOutgoing) * 100).toFixed(1)
+))
+}});
+
+define({id: "db1dc0b4", mode: "inline", inputs: ["unique1to1Matches","display"], body: async (unique1to1Matches,display) => {
+display(await(
+unique1to1Matches.toLocaleString()
+))
+}});
+
+define({id: "72ff8d1f", mode: "inline", inputs: ["unique1toManyMatches","display"], body: async (unique1toManyMatches,display) => {
+display(await(
+unique1toManyMatches.toLocaleString()
+))
+}});
+
+define({id: "58d2412b", mode: "inline", inputs: ["uniqueManyto1Matches","display"], body: async (uniqueManyto1Matches,display) => {
+display(await(
+uniqueManyto1Matches.toLocaleString()
+))
+}});
+
+define({id: "28933e7c", mode: "inline", inputs: ["totalUnmatched","display"], body: async (totalUnmatched,display) => {
+display(await(
+totalUnmatched.toLocaleString()
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Transfer Reconciliation</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Overview</a></li>
+    <li class="observablehq-link"><a href="./matches-1to1">One-to-One Matches</a></li>
+    <li class="observablehq-link"><a href="./matches-1tomany">One-to-Many Matches</a></li>
+    <li class="observablehq-link"><a href="./matches-manyto1">Many-to-One Matches</a></li>
+    <li class="observablehq-link"><a href="./unmatched">Unmatched Transactions</a></li>
+    <li class="observablehq-link"><a href="./raw-data">Raw Data</a></li>
+    <li class="observablehq-link"><a href="./report">Report</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="hero">
+  <h1>Bank Transfer Reconciliation</h1>
+  <p style="margin: 0.5rem 0 0 0; color: var(--theme-foreground-alt); font-size: 1.1rem;">
+    Match all outgoing transactions to their corresponding incoming transactions.
+  </p>
+</div>
+<h2 id="reconciliation-summary" tabindex="-1"><a class="observablehq-header-anchor" href="#reconciliation-summary">Reconciliation Summary</a></h2>
+<div class="observablehq observablehq--block"><!--:c20f781a:--></div>
+<div class="observablehq observablehq--block"><!--:6c0e9a6c:--></div>
+<div class="grid grid-cols-4">
+  <div class="card">
+    <h2>Total Transactions</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:ac9b6769:--></span>
+  </div>
+  <div class="card">
+    <h2>Outgoing Transactions</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:d3950071:--></span>
+  </div>
+  <div class="card">
+    <h2>Total Outgoing Matched</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:60cd8680:--></span>
+  </div>
+  <div class="card">
+    <h2>Match Rate</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:f44167e6:-->%</span>
+  </div>
+</div>
+<div class="grid grid-cols-4">
+  <div class="card">
+    <h2>1-to-1 Matches</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:db1dc0b4:--></span>
+  </div>
+  <div class="card">
+    <h2>1-to-Many Matches</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:72ff8d1f:--></span>
+  </div>
+  <div class="card">
+    <h2>Many-to-1 Matches</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:58d2412b:--></span>
+  </div>
+  <div class="card">
+    <h2>Total Outgoing Unmatched</h2>
+    <span class="big"><observablehq-loading></observablehq-loading><!--:28933e7c:--></span>
+  </div>
+</div>
+<hr>
+<h2 id="navigate-to-other-pages" tabindex="-1"><a class="observablehq-header-anchor" href="#navigate-to-other-pages">Navigate to Other Pages</a></h2>
+<div class="nav-grid">
+  <div class="nav-card">
+    <h3>📊 One-to-One Matches</h3>
+    <p>View transactions with perfect 1:1 matching patterns</p>
+    <a href="./matches-1to1" class="nav-link">Explore 1-to-1 Matches →</a>
+  </div>
+<div class="nav-card">
+    <h3>📊 One-to-Many Matches</h3>
+    <p>Single outgoing transactions matched to multiple incoming</p>
+    <a href="./matches-1tomany" class="nav-link">Explore 1-to-Many →</a>
+  </div>
+<div class="nav-card">
+    <h3>📊 Many-to-One Matches</h3>
+    <p>Multiple outgoing transactions matched to single incoming</p>
+    <a href="./matches-manyto1" class="nav-link">Explore Many-to-1 →</a>
+  </div>
+<div class="nav-card">
+    <h3>📊 Unmatched Transactions</h3>
+    <p>Outgoing transactions that could not be matched with any incoming transactions</p>
+    <a href="./unmatched" class="nav-link">View Unmatched →</a>
+  </div>
+<div class="nav-card">
+    <h3>📊 Raw Bank Data</h3>
+    <p>Complete dataset of all bank transactions</p>
+    <a href="./raw-data" class="nav-link">Browse Raw Data →</a>
+  </div>
+<div class="nav-card">
+    <h3>📋 Reconciliation Report</h3>
+    <p>Comprehensive analysis and methodology documentation</p>
+    <a href="./report" class="nav-link">View Report →</a>
+  </div>
+</div>
+<hr>
+<style>
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--sans-serif);
+  margin: 4rem 0 8rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  max-width: none;
+  font-size: 14vw;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h2 {
+  margin: 0;
+  max-width: 34em;
+  font-size: 20px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--theme-foreground-muted);
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--theme-foreground-focus);
+}
+
+/* Navigation cards styling */
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nav-card {
+  background: var(--theme-background-alt);
+  border: 1px solid var(--theme-foreground-faintest);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-color: var(--theme-foreground-focus);
+}
+
+.nav-card h3 {
+  margin: 0 0 0.75rem 0;
+  color: var(--theme-foreground-focus);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav-card p {
+  margin: 0 0 1.25rem 0;
+  color: var(--theme-foreground-alt);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--theme-foreground-focus);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background: var(--theme-background);
+  border: 1px solid var(--theme-foreground-focus);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background: var(--theme-foreground-focus);
+  color: var(--theme-background);
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .nav-card {
+    padding: 1rem;
+  }
+}
+
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="next" href="./matches-1to1"><span>One-to-One Matches</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-11-11T12:14:57">Nov 11, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>
